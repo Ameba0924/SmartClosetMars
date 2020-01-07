@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="/css/nf.lightbox.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+
+    <script src="/Gscripts/jquery-1.4.4.min.js"></script>
+    <script src="/Gscripts/NFLightBox.js"></script>
+
+    <link rel="stylesheet" href="/css/partial/slidingMenu.css" />
+    
+    <script type="text/javascript">
+
+
+$(function() {
+        var settings = { containerResizeSpeed: 350 };
+        $("#gallery a").lightBox(settings);
+      });
+    </script>
+
+
+    <title>Glasses Gallery</title>
+    <style> 
+        body { 
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+    </style> 
+
+  </head>
+
+  <body>
+
+    <% include ./partial/slidingMenu %>
+
+
+      <div id="mainContent">
+      
+            <h1>스마트 안경 갤러리</h1>
+    <div id="gallery">
+      <ul>
+          <% for(let i=0; i<recData.length; i++) { %>
+              <li>
+                    <img src="<%=recData[i].gImg%>" alt="" />
+                  </a>
+              </li>
+            <%}%>
+
+      </ul>
+    </div>
+
+  </div> <!--여기까지 메뉴바 mainContent-->
+  <script>
+    const image = document.querySelectorAll("img");
+  for (let i = 0; i < image.length; i++) {
+    image[i].addEventListener("click", redirectImage);
+  }
+  function redirectImage(e) {
+  console.log(e.target.currentSrc);
+  const url = e.target.currentSrc;
+  window.location.href = "http://www.localhost:4000/imageInfo?image=" + url;
+}
+
+  </script>
+  </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/uploadTag.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>upload Tag</title>
+    <style>
+      body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h4>
+      RFID 태그를 리더기에 찍고, 태그 번호가 나오면 사진확정을 눌러주세요.
+    </h4>
+
+    <img id="image" src="<%=data%>" />
+    <div id="TagNumber"></div>
+
+    <button onclick="goBack()" class="btBack" id="cancelButton">
+      다시찍기
+    </button>
+    <button id="saveDBbutton">사진확정</button>
+    <script src="/javascript/uploadTag.js"></script>
+  </body>
+</html>
