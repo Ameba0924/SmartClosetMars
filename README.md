@@ -7,7 +7,7 @@
   ![closet1](./public/images/closet1.png)
   ***
   
-• 개발 소프트웨어 : node.js, arduino, python , mysql
+• 개발 소프트웨어 : node.js, arduino, python , mysql , androidstudio
 
 • 기능설명 :
 - kakao vision 서비스와, TensorFlow를 통해 학습시킨 모델을 가지고 
@@ -31,7 +31,7 @@
    
 ###### 백엔드 기능 설명
   
- 1. 개발 언어: node.js, python
+ 1. 개발 언어: node.js, python , java
     * 프레임워크: express
     
  2. 데이터베이스: mysql
