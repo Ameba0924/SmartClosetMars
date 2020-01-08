@@ -23,6 +23,10 @@
      - 사용자 편의성 증대 ( 날씨 정보, 캘린더 )
      ***
    ![closet2](./public/images/closet2.png)
+   ![그림1](https://user-images.githubusercontent.com/55124264/71955660-44a78300-322c-11ea-8002-7fbb99f40433.png)
+   ![그림2](https://user-images.githubusercontent.com/55124264/71955661-44a78300-322c-11ea-9af6-9af1811c7864.png)
+  
+
      ***
    
 ###### 백엔드 기능 설명
